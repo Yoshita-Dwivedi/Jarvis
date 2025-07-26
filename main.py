@@ -24,13 +24,7 @@ def processCommand(c):
         song = c.lower().split(" ")[1]
         link = musiclibrary.music[song]
         webbrowser.open(link)
-    else:
-        #let OpenAI handle the request
-        pass
-
-
-
-
+    
 if __name__ == "__main__":
     speak("Initializing Jarvis...")
     while True:
@@ -38,9 +32,6 @@ if __name__ == "__main__":
         # obtain audio from the microphone
         r = sr.Recognizer()
         
-
-
-
         # recognize speech using google
         print("Recognizing...")
         try:
